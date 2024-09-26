@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { feedback } from 'src/mongoDb/schemas/feedback.schema';
-import { feedbackDto } from 'src/dto/feedback.dto'; // Import the feedbackDto for type safety
+import { feedbackDto } from 'src/dto/feedback.dto';
 
 @Injectable()
 export class FeedbackService {

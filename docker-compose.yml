@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nestjs-app:
+    build:
+      context: .
+    ports:
+      - '3004:3004'
+    container_name: feedback-mechanism
+    restart: always
+    networks:
+      - ai-network
+    environment:
+      - Mongo_Url=
+      - PORT=3004
+
+networks:
+  ai-network:
+    driver: bridge
